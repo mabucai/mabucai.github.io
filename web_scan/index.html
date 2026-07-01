@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>床旁脑功能监测研究视频展示</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="研究首页">
+        <span class="brand-mark"></span>
+        <span>NS lab</span>
+      </a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#videos">Videos</a>
+        <a href="#research">Research</a>
+        <a href="#portal">Portal</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="research" aria-label="研究主题">
+        <div class="wave-lines" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Bedside Brain Monitoring</p>
+          <h1>造影剂增强超声-光声计算机断层成像用于潜在致新生儿脑损伤疾病的床旁脑功能监测研究</h1>
+          <p class="lead">
+            聚焦新生儿脑功能床旁监测、微循环灌注评估与多模态功能影像，致力于脑部疾病早期诊断。
+          </p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="video/3.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="video-section" id="videos" aria-label="研究视频">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Open Video Gallery</p>
+            <h2>研究视频</h2>
+          </div>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="video/1.jpg">
+                <source src="video/1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="card-copy">
+              <span class="card-index">01</span>
+              <h3>新生儿造影增强超声成像</h3>
+              <p>呈现新生儿脑功能相关影像观察与造影增强超声下的动态灌注信息。</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="video/2.jpg">
+                <source src="video/2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="card-copy">
+              <span class="card-index">02</span>
+              <h3>成人经颅造影增强超声定位显微成像</h3>
+              <p>展示经颅声窗下的造影微泡信号定位与脑血流微循环观测能力。</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls preload="metadata" poster="video/3.jpg">
+                <source src="video/3.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="card-copy">
+              <span class="card-index">03</span>
+              <h3>小动物三维造影增强超声定位显微成像</h3>
+              <p>用于小动物模型微血管网络结构与功能研究的三维定位显微成像展示。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="portal-section" id="portal" aria-label="个人视频查询">
+        <div class="portal-copy">
+          <p class="section-kicker">Patient Video Portal</p>
+          <h2>个人视频查询</h2>
+          <p>
+            输入姓名与病历号匹配功能，用于查看个人专属影像学视频。
+          </p>
+        </div>
+
+        <form class="access-form" id="accessForm">
+          <label>
+            <span>姓名</span>
+            <input id="userName" name="userName" type="text" autocomplete="name" placeholder="请输入姓名" />
+          </label>
+          <label>
+            <span>病历号</span>
+            <input id="caseId" name="caseId" type="text" inputmode="text" placeholder="请输入病历号" />
+          </label>
+          <button type="submit">查询个人视频</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
